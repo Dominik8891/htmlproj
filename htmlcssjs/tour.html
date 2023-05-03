@@ -8,18 +8,43 @@
     <link rel="stylesheet" href="CSS/mystyle.css">
     <link rel="stylesheet" href="CSS/slideShow.css">
     <link rel="stylesheet" href="CSS/signs.css">
-    <link rel="stylesheet" href="Javascript/myjs.js">
 </head>
 <body>
-   
+   <header>
     <!--##### Navbar #####-->
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="band.html">Band</a></li>
-        <li><a class="active" href="tour.html">Tour</a></li>
-        <li><a href="about.html">About</a></li>
-        <li style="float:right"><a href="kontakt.html">Kontakt</a></li>
+    <ul class="header">
+        <li class="header"><a href="index.html">Home</a></li>
+        <li class="header"><a href="band.html">Band</a></li>
+        <li class="header"><a class="active" href="tour.html">Tour</a></li>
+        <li class="header"><a href="about.html">About</a></li>
+        <li class="header" style="float:right"><a href="kontakt.html">Kontakt</a></li>
     </ul>
-    
+    </header>
+    <div class="pageContainer">
+
+        <div style="color: white;">
+            <h1>Tekno</h1>
+            <h2>Tour'23</h2>
+        </div>
+
+    <!--##### Liste mit Tourdaten #####-->
+    <ul id="tourUl" style="color: white;">
+        
+    </ul>
+
+
+    <!--##### Import des Videos #####-->
+    <video autoplay muted loop id="myVideo">
+        <source src="Video/othervideo.mp4" type="video/mp4"></video>
+    </video>
+</div>
+<footer>
+    <div class="footer">
+        <button id="myBtn" onClick="pauseFunction()">Pause</button>
+    </div>
+
+</footer>
+
+    <script src="Javascript/myjs.js"></script>
 </body>
 </html>
