@@ -158,5 +158,19 @@ h1.bannerName {
     background-color: #0dca85;
     padding: 5px;
     margin-left: 40px;
+    margin: 25px;
+}
+
+.tourDataVip {
+    list-style: none;
+    width: 200px;
+    text-align: center;
+    border: 2px solid #bbbebd;
+    border-radius: 5px;
+    background: #bbbebd;
+    color: white;
+    padding: 5px;
+    margin-left: 40px;
     margin: 20px;
+    cursor: pointer;
 }
