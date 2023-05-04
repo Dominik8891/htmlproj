@@ -18,10 +18,14 @@ let tourArray = ["16.03.23 | Prague | Lucerna | SOLD OUT",
     "21.04.23 | Frankfurt | Festhalle | SOLD OUT"];
 
 let tourUl = document.getElementById("tourUl");
+let vip = document.getElementById("vip");
 
 tourArray.forEach(item =>  {
     tourUl.innerHTML += '<li class="tourData">'+item+'</li>';
+   
 });
+
+
 
 //######  Pause Funktion für das Video auf der Tour Seite
 let video = document.getElementById("myVideo");

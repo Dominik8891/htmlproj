@@ -135,12 +135,11 @@ h1.bannerName {
 }
 
 #myBtn {
-    width: 200px;
     font-size: 18px;
-    padding: 10px;
+    padding: 14px 16px;
     border: none;
     background: #04AA6D;
-    color: white;
+    color: rgb(0, 0, 0);
     cursor: pointer;
 }
 
@@ -151,12 +150,22 @@ h1.bannerName {
 
 .tourData {
     list-style: none;
-    width: 400px;
+    font-size: 25px;
+    width: auto;
     text-align: left;
     border: 2px solid #04aa6d79;
     border-radius: 5px;
     background-color: #0dca85;
-    padding: 5px;
-    margin-left: 40px;
-    margin: 20px;
+    padding: 10px;
+    margin-left: 20px;
+    margin: 25px;
+}
+
+div.listContainer {
+    text-align: center;
+}
+
+ul.centerList {
+    display: inline-block;
+    text-align: left;
 }
