@@ -22,7 +22,7 @@ let vip = document.getElementById("vip");
 
 tourArray.forEach(item =>  {
     tourUl.innerHTML += '<li class="tourData">'+item+'</li>';
-    vip.innerHTML += '<li class="tourDataVip">'+"<button>VIP UPGRADE</button>"+'</li>';
+   
 });
 
 

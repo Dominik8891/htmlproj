@@ -17,52 +17,35 @@
         <li class="header"><a href="band.html">Band</a></li>
         <li class="header"><a class="active" href="tour.html">Tour</a></li>
         <li class="header"><a href="about.html">About</a></li>
+        <li class="header" style="float:center"><button id="myBtn" onClick="pauseFunction()">Pause</button></li>
         <li class="header" style="float:right"><a href="kontakt.html">Kontakt</a></li>
     </ul>
     </header>
     <div class="pageContainer">
 
-        <div class="row">
-            <div class="column middle" style="text-align: center">
-                <div style="color: white;">
-                    <h1>Tekno</h1>
-                    <h2>Tour'23</h2>
-                </div>
-            </div>
-            <div class="column middle" style="text-align: center;">
-                <div style="color: white;">
-                    <h1>VIP Upgrade</h1>
-                </div>
-            </div>
-        </div>
 
-        <div class="row">
-            <div class="column left"></div>
-            <div class="column middle">
+                <div class="listContainer" style="color: white; ">
+                    <h1 style="font-size: 45px;">Tekno</h1>
+                    <h2 style="font-size: 35px;">Tour'23</h2>
+             
                 <!--##### Liste mit Tourdaten #####-->
-                <ul id="tourUl" style="color: white; ">
+                <ul id="tourUl" class="centerList" style="color: white;">
         
                 </ul>
             </div>
-            <div class="column right">
-                <ul id="vip" style="color: white;">
-
-                </ul>
-            </div>
-        </div>
 
     <!--##### Import des Videos #####-->
     <video autoplay muted loop id="myVideo">
         <source src="Video/othervideo.mp4" type="video/mp4"></video>
     </video>
 </div>
-<footer>
+<!--<footer>
     <div class="footer">
         <button id="myBtn" onClick="pauseFunction()">Pause</button>
     </div>
 
 </footer>
-
+-->
     <script src="Javascript/myjs.js"></script>
 </body>
 </html>
