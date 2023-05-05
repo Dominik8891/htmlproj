@@ -1,70 +1,97 @@
 
 
 body {
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #282733;
     min-height: 100vh;
-    display: grid;
-    grid-template-rows: 1fr auto;
-}
-ul.header {
-    list-style-type: none; 
     margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #383737;
-}
-li.header {
-    float: left;
 }
 
-li.header a {
+header {
+    min-height: 50px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/*#################### CSS für Navbar von hier ###################*/
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+.navbar a {
+    float: left;
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 20px;
     text-decoration: none;
 }
 
-li.header a:hover {
-    background-color: #04aa6d79;
+.navbar a.right {
+    float: right;
 }
 
-.active {
-    background-color: #04AA6D;
+.navbar a:hover {
+    background-color: #277a07;
+    color: black;
 }
 
-.pictureContainer {
-    height: 922px;
+.navbar a.active {
+    background-color: #309409;
+    color: white;
 }
+/*####################### bis hier ###################*/
 
-.pictureContainer img {
-    display: block;
-}
-
-.flex {
+/*################### CSS für Flexbox ###########################*/
+.row {
     display: flex;
-    justify-content: center;
-    align-items: center;
+flex-wrap: wrap;
 }
 
-.column {
-    float: left;
-    padding: 10px;
+.flexBannerSide {
+    flex: 25%;
 }
 
-.column.side {
-    width: 25%;
-    height: 100%;
+.flexBannerName {
+    flex: 50%;
 }
 
-.column.middle {
-    width: 50%;
-    height: 100%;
+.flexSide {
+    flex: 25%; 
+    padding: 20px;
 }
 
-.column.even {
-    width: 33%;
-    height: 100%;
+.flexMain {
+    flex: 50%;
+    padding: 20px;
+}
+/*############################ bis hier #########################*/
+
+.imgFit {
+    width: 100%;
+    object-fit: cover;
+    text-align: center;
+}
+
+/*##### Spiegelt das Bild #####*/
+.imgHor {
+    transform: rotateY(180deg); 
+}
+
+.tourText {
+    font-size: 30px;
+    color: white;
 }
 
 .row::after {
@@ -86,34 +113,11 @@ h1.bannerName {
     margin: 0;
 }
 
-.pageContainer {
+footer {
+    clear: both;
     position: relative;
-    min-height: 100vh;
-}
-
-.contentWrap {
-    padding-bottom: 4.5rem;
-}
-
-.footer {
-    margin-top: auto;
-    bottom: 0;
-    width: 100%;
+    height: 50px;
     text-align: center;
-    color: white;
-    background: #22222c;
-    height: 60px;
-    
-}
-
-
-
-.imgContainer {
-    height: 922px;
-}
-
-.imgContainer img {
-    display: block;
 }
 
 #myVideo {
@@ -123,15 +127,6 @@ h1.bannerName {
     min-width: 100%;
     min-height: 100%;
     z-index: -1;
-}
-
-.content {
-    position: fixed;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    color: #f1f1f1;
-    width: 100%;
-    padding: 20px;
 }
 
 #myBtn {
@@ -163,9 +158,26 @@ h1.bannerName {
 
 div.listContainer {
     text-align: center;
+    color: white;
 }
 
 ul.centerList {
     display: inline-block;
     text-align: left;
+}
+
+/*######################## Setzt bei eine Display weite von unter 700 Pixeln
+######################### die Flexboxen untereinander #####################*/
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+/*############# Bei unter 400 Pixel navbar diagonal ##################*/
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
 }

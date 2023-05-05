@@ -1,5 +1,6 @@
-* {box-sizing: border-box;
-max-height: 600px !important;}
+* {
+    box-sizing: border-box;
+}
 
 .slideshow-container {
     

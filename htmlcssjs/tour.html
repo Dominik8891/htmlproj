@@ -12,40 +12,55 @@
 <body>
    <header>
     <!--##### Navbar #####-->
-    <ul class="header">
-        <li class="header"><a href="index.html">Home</a></li>
-        <li class="header"><a href="band.html">Band</a></li>
-        <li class="header"><a class="active" href="tour.html">Tour</a></li>
-        <li class="header"><a href="about.html">About</a></li>
-        <li class="header" style="float:center"><button id="myBtn" onClick="pauseFunction()">Pause</button></li>
-        <li class="header" style="float:right"><a href="kontakt.html">Kontakt</a></li>
-    </ul>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <!--<a href="band.html">Band</a>-->
+        <a class="active" href="tour.html">Tour</a>
+        <a href="about.html">Über uns</a>
+        <button id="myBtn" onClick="pauseFunction()">Pause</button>
+        <a href="kontakt.html" class="right">Kontakt</a>
+    </div>
     </header>
-    <div class="pageContainer">
-
-
-                <div class="listContainer" style="color: white; ">
+    <main>
+        <div class="row">
+            <div class="flexMain">
+                <div class="listContainer" >
                     <h1 style="font-size: 45px;">Tekno</h1>
                     <h2 style="font-size: 35px;">Tour'23</h2>
-             
-                <!--##### Liste mit Tourdaten #####-->
-                <ul id="tourUl" class="centerList" style="color: white;">
-        
-                </ul>
+
+                    <!--##### Liste mit Tourdaten #####-->
+                    <ul id="tourUl" class="centerList"></ul>
+                </div>
             </div>
+            <div class="flexSide">
+                <img src="Bilder/SängerNicoSallach.jpg" alt="Sänger Nico Sallach" style="margin-top: 70px;">
+                <p class="tourText" style="margin-top: 150px;">Shouter Kevin Ratajczak</p>
+                <img src="Bilder/GitaristPascalSchillo.jpg" alt="Gitarrist Pascal Schillo" style="margin-top: 150px;">
+                <p class="tourText" style="margin-top: 150px;"> Gitarrist Daniel Haniß</p>
+                <img src="Bilder/SchlagzeugerDavidFriedrich.jpg" alt="Schlagzeuger David Friedrich" style="margin-top: 150px">
+                <p class="tourText" style="margin-top: 150px;">Bassist Daniel Klossek</p>
+            </div>
+            <div class="flexSide">
+                <p class="tourText" style="margin-top: 120px;">Sänger Nico Sallach</p>
+                <img src="Bilder/ShouterKevinRatajczak.jpg" alt="Shouter Kevin Ratajczak" style="margin-top: 100px;">
+                <p class="tourText" style="margin-top: 150px;">Gitarrist Pascal Schillo</p>
+                <img src="Bilder/GitarristDanielHaniß.jpg" alt="Gitarrist Daniel Haniß" style="margin-top: 150px;">
+                <p class="tourText" style="margin-top: 120px;">Schlagzeuger David Friedrich</p>
+                <img src="Bilder/BassistDanielKlossek.jpg" alt="Bassist Daniel Klossek" style="margin-top: 100px;">
+            </div>
+        </div>
+    
 
     <!--##### Import des Videos #####-->
     <video autoplay muted loop id="myVideo">
         <source src="Video/othervideo.mp4" type="video/mp4"></video>
     </video>
-</div>
-<!--<footer>
-    <div class="footer">
-        <button id="myBtn" onClick="pauseFunction()">Pause</button>
-    </div>
+
+</main>
+<footer>
 
 </footer>
--->
+
     <script src="Javascript/myjs.js"></script>
 </body>
 </html>
