@@ -19,7 +19,49 @@
         <!--<a href="#">dodo</a>-->
         <a href="kontakt.html" class="right active">Kontakt</a>
     </div>
-</header>
+    </header>
+    <main>
+        <!--##### Banner #####-->
+        <div class="row">
+            <div class="flexBannerSide">
+                <img src="Bilder/Elektric_Callboy_SideColor.png" alt="sideColor" height="150px" width="100%">
+            </div>
+            <div class="flexBannerName">
+                <p class="bannerName" style="color: white;text-align: center; font-size: 130px; margin: 0;" >Electric Callboy</p> 
+            </div>
+            <div class="flexBannerSide">
+                <img src="Bilder/Elektric_Callboy_SideColor.png" alt="sideColor" height="150px" width="100%" class="imgHor">
+            </div>
+        </div>
+
+        <!--##### Formular #####-->
+        <div class="row">
+            <div class="flexBioSide"></div>
+            <div class="flexForm">
+                <p class="formInfo"><span style="color: red;">*</span> notwendige angaben!</p>
+                <div class="formBox">
+                    <form action="kontakt.html">
+                        <label for="gender">Geschlecht:</label>
+                        <select name="gender" id="gender">
+                            <option value="notSpecified">keine Angabe</option>
+                            <option value="male">männlich</option>
+                            <option value="female">weiblich</option>
+                        </select>
+                        <label for="firstName">Vorname: <span style="color: red;">*</span></label>
+                        <input type="text" id="firstName" placeholder="Dein Vorname ...." required>
+                        <label for="lastName">Nachname: <span style="color: red;">*</span></label>
+                        <input type="text" id="lastName" placeholder="Dein Nachname ....." required>
+                        <label for="email">Email: <span style="color: red;">*</span></label>
+                        <input type="email" id="email" placeholder="Deine Email Adresse ...." required>
+                        <textarea name="message" id="message" placeholder="Deine Nachricht an uns ...."></textarea>
+                        <label for="checkboxAndSubmit"><span>Abonieren</span><input type="checkbox" id="abo" name="abo" value="abo">
+                        <input type="submit" value="Senden"></label>
+                    </form>
+                </div>
+            </div>
+            <div class="flexBioSide"></div>
+        </div>
+    </main>
 
 </body>
 </html>
