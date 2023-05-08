@@ -14,7 +14,6 @@
     <!--##### Navbar #####-->
     <div class="navbar">
         <a href="index.html">Home</a>
-        <!--<a href="band.html">Band</a>-->
         <a class="active" href="tour.html">Tour</a>
         <a href="about.html">Biographie</a>
         <button id="myBtn" onClick="pauseFunction()">Pause</button>
@@ -26,9 +25,10 @@
             <div class="flexSide"></div>
             <div class="flexMain">
                 <div class="listContainer" >
-                    <h1 style="font-size: 45px;">Tekno</h1>
-                    <h2 style="font-size: 35px;">Tour'23</h2>
-
+                    <div class="tourText">
+                        <h1>Tekno</h1>
+                        <h2>Tour'23</h2>
+                    </div>  
                     <!--##### Liste mit Tourdaten #####-->
                     <ul id="tourUl" class="centerList"></ul>
                 </div>
@@ -45,9 +45,7 @@
     </video>
 
 </main>
-<footer>
 
-</footer>
 
     <script src="Javascript/myjs.js"></script>
 </body>

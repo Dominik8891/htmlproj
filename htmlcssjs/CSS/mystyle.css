@@ -104,9 +104,14 @@ flex-wrap: wrap;
     transform: rotateY(180deg); 
 }
 
-.tourText {
-    font-size: 30px;
-    color: white;
+.tourText > h1 {
+    margin: 20px;
+    font-size: 100px;
+}
+
+.tourText > h2 {
+    margin: 20px;
+    font-size: 75px;
 }
 
 .bioText > h1 {
@@ -143,8 +148,9 @@ h1.bannerName {
 footer {
     clear: both;
     position: relative;
-    height: 50px;
+    height: 70px;
     text-align: center;
+    background-color: #18171f;
 }
 
 #myVideo {
@@ -189,7 +195,7 @@ div.listContainer {
 }
 
 ul.centerList {
-    margin-top: 150px;
+    margin-top: 50px;
     display: inline-block;
     text-align: left;
     list-style: none;
@@ -258,7 +264,7 @@ input[type=submit]:hover {
 .formBox {
     border-radius: 5px;
     background-color: #282733;
-    padding: 20px 250px 150px;
+    padding: 20px 250px 0;
     color: white;
     font-size: 20px;
 }
